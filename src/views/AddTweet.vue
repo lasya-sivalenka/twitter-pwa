@@ -26,7 +26,7 @@ export default {
           body: this.tweet,
           date: 'now',
           author: 'Me',
-          avatar: '/egg.jpeg'
+          avatar: require('../static/egg.jpeg')
         }
         this.$root.$emit('addTweet',tweet);
         this.$router.push('/');

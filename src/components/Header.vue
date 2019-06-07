@@ -33,6 +33,57 @@ export default {
 
 <style lang="scss" scoped>
 
+@media only screen and (max-width: 700px) {
+  header .link {
+    width: 30px;
+    border-bottom: 2px solid #1c94e0;
+    text-decoration: unset;
+    display: block;
+    font-weight: bold;
+    padding: 0 5px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  header .inner {
+    max-width: 80%;
+  }
+  
+}
+
+@media only screen and (min-width: 710px) {
+  
+  header .link {
+      color: #1da1f2;
+      width: 50px;
+      border-bottom: 2px solid #1c94e0;
+      text-decoration: unset;
+      display: block;
+      font-weight: bold;
+      padding: 0 15px;
+  }
+
+  .search {
+      align-self: center;
+      width: 200px;
+      height: 35px;
+      padding: 10px;
+      background-color: #f5f8fa;
+      border-radius: 21px;
+      border: 1px solid #e6ecf0;
+      box-sizing: border-box;
+      color: #14171a;
+      outline: 0;
+  }
+
+  header .inner {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+}
+
 header {
     width: 100%;
     height: 57px;
@@ -43,8 +94,6 @@ header {
 }
 
 header .inner {
-    max-width: 65%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,28 +110,8 @@ header .inner {
     width: 33%;
 }
 
-header .link {
-    color: #1da1f2;
-    width: 50px;
-    border-bottom: 2px solid #1c94e0;
-    text-decoration: unset;
-    display: block;
-    font-weight: bold;
-    padding: 0 15px;
-}
 
-.search {
-    align-self: center;
-    width: 200px;
-    height: 35px;
-    padding: 10px;
-    background-color: #f5f8fa;
-    border-radius: 21px;
-    border: 1px solid #e6ecf0;
-    box-sizing: border-box;
-    color: #14171a;
-    outline: 0;
-}
+
 
 .tweetLink {
     background-color: #1da1f2;
